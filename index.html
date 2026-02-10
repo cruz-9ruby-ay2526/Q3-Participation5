@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participation 5 : idk?</title>
+<!--BOOTSCRAP-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class=".container">
+        <h1>SUM OF TWO VARIABLES</h1>
+        <form><div class="mb-3">
+            <label class="form-label" for="inputFirstName">First Name:</label>
+            <input type="number" id="num1">
+            <label class="form-label" for="inputSecondName">Second Name:</label>
+            <input type="number" id="num2"> 
+            <p id="result"> the sum of the two varbiables</p>
+        </div>
+        <!--CALCULATE-->
+        <button type="button" 
+                class="btn btn-success"
+                onclick="plus()">
+                Calculate
+        </button>
+        <!--REFLESHING-->
+        <button type="button" 
+        class="btn btn-success" 
+        onclick="window.location.reload()">Refresh Page
+    </button>
+        <script>
+               function plus(){
+                    var var1 = Number(document.getElementById("num1").value);
+                    var var2 = Number(document.getElementById("num2").value);
+                    var sum = var1 + var2;
+                    document.getElementById("result").innerHTML="The sum: " + sum
+
+            }
+        </script>
+    </div>
+    
+
+    
+        
+</body>
+</html>
